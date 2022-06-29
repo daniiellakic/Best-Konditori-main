@@ -400,7 +400,7 @@ img:hover {
         padding-left: 1.5em;
     }
     .hero-text p {
-        font-size: 2em;
+        font-size: 1.6em;
         color: #fff;
         font-family: 'Ultra', serif;
     }
@@ -417,6 +417,10 @@ img:hover {
     .about-image {
         height: 100%;
         flex: 100%;
+    }
+    .about-text p {
+        font-size: 1.6em;
+        line-height: 30px;
     }
     #info {
         height: 100%;
