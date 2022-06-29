@@ -361,7 +361,7 @@ img:hover {
         background: #C19A6B;
         position: fixed;
         top: 30px;
-        right: 40px;
+        right: 30px;
     }
     .toggle.active::after {
         transform: translateY(0) rotate(-45deg);
@@ -397,7 +397,7 @@ img:hover {
     }
     .hero-text {
         padding-top: 8em;
-        padding-left: 2em;
+        padding-left: 1.5em;
     }
     .hero-text p {
         font-size: 2em;
@@ -409,7 +409,7 @@ img:hover {
     }
     .container {
         padding-top: 30px;
-        padding-left: 50px;
+        padding-left: 30px;
         padding-right: 50px;
         display: flex;
     }
