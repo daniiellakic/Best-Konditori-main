@@ -9,6 +9,12 @@ toggle.addEventListener('click', function() {
 });
 
 
+function closeNav() {
+    navigation.classList.remove('active');
+    toggle.classList.remove('active');
+}
+
+
 /*  NAVIGATION STICKY AND CHANGES COLOR 
 
 var navbar = document.querySelector('.navigation')

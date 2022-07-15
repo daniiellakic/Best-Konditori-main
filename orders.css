@@ -18,19 +18,11 @@ header {
     transition: background .15s; */
 }
 
-
-/*
-.navigation.scrolled {
-    background: #775a37;
-}
-
-*/
-
 .logo {
     max-width: 80%;
     font-family: monospace;
     font-size: 1.9em;
-    color: #fff;
+    color: #C19A6B;
 }
 
 .navigation {
@@ -45,7 +37,7 @@ header {
     position: relative;
     font-family: monospace;
     font-size: 1.6em;
-    color: #fff;
+    color: #C19A6B;
     margin-left: 40px;
     text-decoration: none;
     transition: 0, 25s;
@@ -58,155 +50,73 @@ header {
 
 #hero {
     width: 100%;
-    height: 100vh;
-    background: url(/video/video-bageri.mp4) no-repeat center center fixed;
+    height: 10vh;
+    background: rgb(255, 255, 255);
     background-size: cover;
     position: relative;
 }
 
-.myVideo {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: blur(0px) brightness(0.8);
+form {
+    max-width: 420px;
+    margin: 50px auto;
 }
 
-@media (max-width: 991px) {
-    .myVideo {
-        object-fit: fill;
-    }
-}
-
-.hero-text {
-    font-family: monospace;
-    font-size: 1.6em;
-    color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-top: 13em;
-    padding-left: 5em;
-    text-shadow: 2px 2px 0px #C19A6B;
-}
-
-.hero-text p {
-    font-size: 3em;
-    color: #fff;
-    font-family: 'Ultra', serif;
-}
-
-#about {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: #C19A6B;
-    font-family: monospace;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
-}
-
-.about-text {
-    flex: 50%;
-    line-height: 40px;
-}
-
-.about-text h3 {
-    font-family: monospace;
-    color: #fff;
-    font-size: 3em;
-    padding-bottom: 10px;
-}
-
-.about-text p {
-    font-family: monospace;
-    color: #fff;
-    font-size: 2em;
-}
-
-.about-image {
-    flex: 50%;
-    width: 200px;
-    height: 550px;
-    border-radius: 1px;
-}
-
-.about-image:hover {}
-
-#info {
-    width: 100%;
-    height: 70vh;
-    font-family: monospace;
-}
-
-#info h1 {
-    text-align: center;
-    font-size: 3em;
-    font-weight: bolder;
+.contact-sec-title {
     color: #C19A6B;
-    margin-top: 1.2em;
-}
-
-.container-info {
+    font-family: monospace;
+    font-size: 2.5em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
     text-align: center;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: -2px 0 0 -36px;
-    width: calc(100% + 12px);
-    justify-content: center;
-    gap: 32px;
 }
 
-.container-info p {
-    margin-right: -60px;
-    margin-top: 50px;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #C19A6B;
-}
-
-.square {
-    width: 180px;
-    height: 180px;
-    gap: 22px;
-    flex: 1;
-}
-
-.box-info {
-    font-size: 14px;
-    max-width: 120px;
-    margin: 30px;
-}
-
-#image-about {
+.feedback-input {
+    color: rgb(7, 7, 7);
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #C19A6B;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
     width: 100%;
-    height: 120%;
-    object-fit: cover;
-    border-radius: 10px;
+    box-sizing: border-box;
+    outline: 0;
 }
 
-#image-about:hover {
-    cursor: cursor;
+.feedback-input:focus {
+    border: 2px solid #C19A6B;
 }
 
-#image-square {
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: monospace;
     width: 100%;
-    height: 120%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-#image-square:hover {
+    background: #C19A6B;
+    border-radius: 5px;
+    border: 0;
     cursor: pointer;
-    transition: .4s;
-    box-shadow: 5px 5px 5px #888888;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #916836;
 }
 
 #footer {
@@ -296,6 +206,8 @@ header {
 
 .row2 label {
     line-height: 20px;
+    font-weight: 100;
+    color: #fff;
     margin-top: 10px;
     margin-left: 20px;
     max-width: 140px;
@@ -328,10 +240,7 @@ header {
     font-weight: bold;
 }
 
-
-/* Responsive */
-
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     header {
         padding: 20px 40px;
     }
@@ -351,10 +260,10 @@ header {
         position: absolute;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #C19A6B;
         transform: translateY(-10px);
         transition: 0.25s;
-        box-shadow: 0 10px 0 #fff;
+        box-shadow: 0 10px 0 #C19A6B;
     }
     .toggle.active::before {
         transform: translateY(0) rotate(45deg);
@@ -365,12 +274,12 @@ header {
         position: absolute;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #C19A6B;
         transform: translateY(10px);
         transition: 0.25s;
     }
     .toggle.active {
-        background: #C19A6B;
+        background: #FFFF;
         position: fixed;
         top: 30px;
         right: 30px;
@@ -393,7 +302,7 @@ header {
         align-items: center;
         flex-direction: column;
         z-index: 999;
-        background: #C19A6B;
+        background: #FFFF;
     }
     .navigation li a {
         font-size: 2.5em;
@@ -403,40 +312,6 @@ header {
     }
     .navigation li a:hover {
         color: #7c6345;
-    }
-    #hero {
-        height: 80vh;
-    }
-    .hero-text {
-        padding-top: 8em;
-        padding-left: 1.5em;
-    }
-    .hero-text p {
-        font-size: 1.6em;
-        color: #fff;
-        font-family: 'Ultra', serif;
-    }
-    #about {
-        height: 100%;
-    }
-    .container {
-        padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 50px;
-        display: flex;
-    }
-    .about-text,
-    .about-image {
-        height: 100%;
-        flex: 100%;
-    }
-    .about-text p {
-        font-size: 1.6em;
-        line-height: 30px;
-    }
-    #info {
-        height: 100%;
-        padding: 10px;
     }
     #footer {
         padding: 10px;

@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="orders.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-
-    <title>Best Konditori</title>
+    <title>Ordrene</title>
 </head>
 
 <body>
-
     <section id="hero">
 
         <header>
-
 
             <div class="logo">
                 <p>BK</p>
@@ -26,73 +23,47 @@
 
             <div class="toggle"></div>
             <ul class="navigation">
-                <li><a onclick="closeNav()" href="#about">Om Oss</a></li>
-                <li><a onclick="closeNav()" href="#info">Sortiment</a></li>
+                <li><a onclick="closeNav()" href="/index.html#about">Om Oss</a></li>
+                <li><a onclick="closeNav()" href="/index.html#info">Sortiment</a></li>
                 <li><a onclick="closeNav()" href="orders.html">Ordrene</a></li>
                 <li><a onclick="closeNav()" href="#footer">Kontakt</a></li>
             </ul>
 
         </header>
 
-        <div class="hero-text">
-            <h2>Kafé & konditori</h2>
-            <p>Best Konditori</p>
-        </div>
-
-        <video playsinline autoplay loop muted class="myVideo">
-                <source src="/video/video-bageri.mp4" type="video/mp4">
-        </video>
     </section>
 
+    <form>
+        <h1 class="contact-sec-title">Ordrene</h1>
+        <input name="name" type="text" class="feedback-input" placeholder="Navnet ditt" />
+        <input name="telefonnummer" type="text" class="feedback-input" placeholder="Telefonnummer" />
+        <input name="email" type="text" class="feedback-input" placeholder="Skriv inn din e-mail" />
+        <textarea name="text" class="feedback-input" placeholder="Skriv hva du ønsker å bestille hos oss"></textarea>
+        <input type="submit" value="SENDE" />
+    </form>
+    <!---
+     <section id="contact">
 
+        <h1 class="contact-sec-title">Ordrene</h1>
+        <div class="column__form">
+            <label for="fname">Navnet ditt</label>
+            <input type="text" id="name" name="firstname" placeholder="Navnet.." required>
 
-    <section id="about">
-        <div class="container">
-            <div class="about-text">
-                <h3> Velkommen till Best kafé & konditori</h3>
-                <p>Vi bakar kaker till alle anledningar & vi har stort utsvalg av søtsaker fra midtøsten. Vi har ett utvalg av kaker/porsjonskaker, nydelige festkaker til alle anledningar! Vi leverer til konfirmasjon, dåp, bryllup og alle andre anledningar.
-                    Vi kan tilby klassiske kaker som marsipankake, kremkake og barns sjokoladekake, prøv også gjerne vår bestselger fruktkaken.</p>
-            </div>
+            <label for="lname">Skriv inn din e-mail</label>
+            <input type="text" id="email" name="lemail" placeholder="E-mail.." required>
 
-            <div class="about-image">
-                <img src="images/image7.jpeg" id="image-about" alt="">
-            </div>
-        </div>
-    </section>
+            <label for="phone">Tast inn ditt telefonnummer</label>
+            <input type="text" id="phone" name="phone" placeholder="070-0000000" required>
 
-
-    <section id="info">
-
-        <h1>Sortiment</h1>
-
-        <div class="container-info">
-            <div class="box-info">
-                <div class="square">
-                    <img src="images/image4.jpeg" id="image-square" alt="" />
-                </div>
-                <p>Bryllupskake</p>
-            </div>
-            <div class="box-info">
-                <div class="square">
-                    <img src="images/image1.jpeg" id="image-square" alt="" />
-                </div>
-                <p>Bursdagskake</p>
-            </div>
-            <div class="box-info">
-                <div class="square">
-                    <img src="images/image9.jpeg" id="image-square" alt="" />
-                </div>
-                <p>Dåp/Babyshower Kake</p>
-            </div>
-            <div class="box-info">
-                <div class="square">
-                    <img src="images/image6.jpeg" id="image-square" alt="" />
-                </div>
-                <p>Kakor</p>
-            </div>
+            <label for="message">Melding</label>
+            <textarea id="subject" name="subject" placeholder="Skriv hva du ønsker å bestille hos oss" style="height:150px" required></textarea>
+            <input type="submit" value="Sende">
+            </form>
         </div>
 
     </section>
+-->
+
 
     <footer id="footer">
 
@@ -174,11 +145,8 @@
 
     </footer>
 
-
-
-
-
     <script src="main.js "></script>
+
 </body>
 
 </html>
