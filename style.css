@@ -78,7 +78,7 @@ header {
 
 @media (max-width: 991px) {
     .myVideo {
-        object-fit: fill;
+        object-fit: cover;
     }
 }
 
