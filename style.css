@@ -76,12 +76,6 @@ header {
     filter: blur(0px) brightness(0.8);
 }
 
-@media (max-width: 991px) {
-    .myVideo {
-        object-fit: cover;
-    }
-}
-
 .hero-text {
     font-family: monospace;
     font-size: 1.6em;
